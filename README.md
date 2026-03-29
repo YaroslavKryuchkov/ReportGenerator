@@ -28,8 +28,8 @@ python report_generator.py --files path/to/data.csv can/be/multiple/data/sources
 2.Метод должен возвращать (rows, headers) для tabulate.<br>
 3.Вызывайте через --report <method_name><br>
 
-Пример:
-def average_coffee(self, data: Dict[str, List[Dict[str, Any]]]) -> Tuple[List[Tuple[str, float]], List[str]]:
-    # ваша логика
+Пример:<br>
+def average_coffee(self, data: Dict[str, List[Dict[str, Any]]]) -> Tuple[List[Tuple[str, float]], List[str]]:<br>
+    # ваша логика<br>
     return rows, headers
     
