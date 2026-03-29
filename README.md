@@ -20,13 +20,13 @@ python report_generator.py --files path/to/data.csv can/be/multiple/data/sources
 median-coffee - медианная сумма трат на кофе по каждому студенту
 
 <h3>Тестовые файлы</h3>
-В папке testfiles есть тестовые .csv файлы и значения при вызове\n
+В папке testfiles есть тестовые .csv файлы и значения при вызове<br>
 python report_generator.py --files path/to/data.csv can/be/multiple/data/sources.csv --report median-coffee
 
 <h2 align="center">Добавление нового отчёта</h2>
-1.Создайте метод в reporter.py.
-2.Метод должен возвращать (rows, headers) для tabulate.
-3.Вызывайте через --report <method_name>
+1.Создайте метод в reporter.py.<br>
+2.Метод должен возвращать (rows, headers) для tabulate.<br>
+3.Вызывайте через --report <method_name><br>
 
 Пример:
 def average_coffee(self, data: Dict[str, List[Dict[str, Any]]]) -> Tuple[List[Tuple[str, float]], List[str]]:
